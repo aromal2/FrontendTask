@@ -18,8 +18,8 @@
 .line-wrapper {
   display: flex;
   margin-top:159px;
-  height: 40px;
-  width:  340.734px;
+  height: 24px;
+  width:  343px;
   margin-left: 388px;
 }
 
@@ -27,26 +27,41 @@
   flex-grow: 8;
   height: 1px;
   background-color:#C8C8C8; /* Change the color of the line */
-  margin: -1px 13px; /* Adjust the space between the line and text */
+  margin-left: 1px;
+  margin-right:10px;
+  border: 0.9px;
+  /* Adjust the space between the line and text */
+  
+}
+
+.line1 {
+  flex-grow: 8;
+  height: 1px;
+  background-color:#C8C8C8; /* Change the color of the line */
+  margin-left: 5px;
+  margin-right:0px;
+  border: 0.9px;
+  /* Adjust the space between the line and text */
   
 }
 
 .text {
   align-items: center;
-  color: #007f61;
-  font-family: 'MetropolisRegular';
-  font-size: 18.076px;
+  color:  #FF6B82;
+  font-family: 'Inter';
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 0px; /* Prevent text from wrapping */
-  letter-spacing: 1px;
+  line-height: 24.2px; /* Prevent text from wrapping */
+  letter-spacing: 0px;
+  margin-top: -13px;
 }
 
 .second {
-  height: 74.112px;;
-  width: 340.734px; ;
-  margin-left: 388px;
-  border-radius: 5px;
+  height: 74.11px;;
+  width: 341px; ;
+  margin-left: 389px;
+  margin-top: 2px;
   border: 0.904px solid#C8C8C8; 
 }
 
@@ -67,10 +82,18 @@
   width: 14.461px; /* Set the width of the custom radio button */
   height: 14.461px;; /* Set the height of the custom radio button */
   border-radius: 50%; /* Make it circular */
-  border: 2px solid #000; /* Add a border */
+  border: 2px solid  #FF6B82;
+  background-color: pink;
+ ; /* Add a border */
   position: relative;
   cursor: pointer;
   
+}
+
+
+
+.radio1:checked + label::before {
+  background-color: rose;
 }
 
 .radio2{
@@ -118,19 +141,35 @@ line-height: normal;
 
 .pair1 p {
   margin: 0; /* Reset default paragraph margins */
-  padding: 1px 0; /* Adjust padding to control the space between paragraphs */
+  padding: 2px 0; /* Adjust padding to control the space between paragraphs */
 }
 
 
 .pair1pair
 {
+  
   color: #000;
-font-family: 'MetropolisRegular';
-font-size: 14.461px;
+font-family: 'Inter';
+font-size: 14px;
 font-style: normal;
-font-weight: 400;
+font-weight:600;
+font-weight: bold;
 line-height: normal;
+padding-top: 7px;
 }
+
+.off1{
+  font-family: 'Inter';
+    width: 57px;
+    height: 15px;
+    color: white;
+    background-color: #FF6B82;
+    font-size: 12px;
+    line-height: 14.52px;
+    text-align: center;
+    font-weight: 400;
+}
+
 
 .pair1price{
   color: #000;
@@ -166,23 +205,81 @@ line-height: 1.2;
 }
 
 .secondsecond{
-  margin-left: 128px;
-  margin-top: 10px;
+  margin-left: 108px;
+  margin-top: 16px;
   font-size: 14.461px;
   font-stretch: extra-expanded;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
-  font-family: 'MetropolisRegular';
+  font-family: 'Inter';
   
+}
+
+.second2{
+  text-decoration: line-through;
+  font-size: 10px;
+  font-family: 'Inter';
+  color: lightgrey;
+  font-weight: 500;
+  padding-top: 0px;
+  padding-left: 5px;
+}
+
+.secondsecond2{
+  margin-left: 108px;
+  margin-top: -13px;
+  font-size: 10px;
+  font-stretch: extra-expanded;
+  text-decoration: line-through;
+  font-weight: 400;
+  line-height: 12.1px;
+  font-family: 'Inter';
+  color: lightgrey;
+  
+}
+
+.thirdtop{
+  width: 345px;
+  margin-left: 388px;
+  height:27px;
+  display:flex;
+  justify-content: flex-start; /* Align items to the start (left) of the container */
+  align-items: flex-end;
+}
+
+.thirdtop1{
+  width: 255px;
 }
  
 .third{
    height: 162px;
   width: 341px; 
-  margin-top: 24px;
+   margin-top: -1px; 
   margin-left: 388px;
-  border-radius: 3.615px;
-  border: 0.904px solid#C8C8C8;
+  border: 1px solid lightgrey;
+  background-color:#FFF9FA;
+;
+}
+
+.trapezoid {
+ 
+  width: 150px; /* Width of the trapezoid */
+  height: 7px;
+  border-bottom: 9px solid  #D7445B;
+; /* Adjust height and color as needed */
+  border-left: 8px solid transparent; /* Adjust left border to change angle */
+  border-right: 6px solid transparent;
+  margin-left: 0px; /* Adjust right border to change angle */
+
+
+}
+
+
+.third3{
+  text-decoration: line-through;
+  font-size: 10px;
+  margin-left: 106px;
+  color: grey;
 }
 
 .thirddividing1{
@@ -195,81 +292,164 @@ line-height: 1.2;
 }
 .pair2 p {
   margin: 0; /* Reset default paragraph margins */
-  padding: 2px 0; /* Adjust padding to control the space between paragraphs */
+  padding: 14px 0; /* Adjust padding to control the space between paragraphs */
 }
 
 .twopair {
+  width:40px;
+  height:17px;
   color: black;
- font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 14.461px;
-  margin-left: 20px;
-  margin-top: 4px;
+ font-family: 'Inter';
+  font-weight: 600;
+  font-size: 14px;
+  /* margin-left: 20px;
+  margin-top: 4px; */
   font-style: normal;
-font-weight: 400;
-line-height: normal;
+line-height:16.94px;
+padding-top: 0px;
 }
 
 .twopair2{
    margin-left: 19px;
   margin-top: 11px;
-   font-size: 14.461px;
-  font-weight: 500;
+   font-size: 12px;
+  font-weight: 400;
   line-height: normal;
- font-family: 'Inter', sans-serif; 
+ font-family: 'Inter'; 
   font-style: normal;
-line-height: 1.2;
+line-height: 14.52px;
 }
 
 .thirddivi{
-  margin-top: 9px;
+  height: auto;
+  margin-top: -1px;
+  margin-left: 0px;
   display: flex;
 }
 
-.crossed-text {
-  margin-left: 34px;
-  margin-top: 23px;
-  text-decoration: line-through;
-  font-size:  9.942px;
-  color: #C8C8C8;
-   font-family: 'Inter', sans-serif; 
+.pair3{
+  color: #000;
+    font-family: 'Inter';
+    font-size: 14.461px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    padding-top: 7px;
+    padding-left: 6px;
+}
+
+.off3{
+   margin-top: 12px;
+  margin-left: 7px;
+ font-family: 'Inter';
+  width: 57px;
+ height: 15px;
+  color: white; 
+  background-color:  #FF6B82;
+  font-size:  12px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 14.52px;
+}
+
+.third4{
+display: flex;
+}
+
+.thirdthirdthird{
+  margin-top: -3px;
+  margin-left: 91px;
+}
+
+ .crossed-text {
+    font-family: 'Inter', sans-serif; 
    font-weight: 300;
+
+} 
+
+.rec23{
+  margin-top: 24px;
+  margin-left: 4px;
+  font-family: 'Inter';
+  width: 57px;
+ height: 15px;
+  color: white; 
+  background-color:  #FF6B82;
+  font-size:  12px;
+  line-height: 14.52px;
+  text-align: center;
+  font-weight: 400;
+  
 
 }
 
 .thirdthird{
-  height: auto;
-  margin-left: 44px;
-  margin-top: 8px;
+  height: 0px;
+  margin-left: 70px;
+  margin-top: -9px;
   margin-bottom: 0px;
 }
 
+.rectangle2{
+  font-family: 'Inter';
+  font-weight: 700;
+ width: 119px;
+ height: 21px;
+  margin-left: 4px;
+  margin-top: 1px;
+  border: 1px solid #FF6B82;
+; /* Set border color to rose color */
+  border-radius: 0px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  color: white; 
+  background-color:  #FF6B82;
+   text-align:center;
+  font-size:12px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thirdthird3{
+   margin-left: 5px;
+   margin-top: 10px;
+  /* padding-top: 19px; */ 
+  font-size: 14.46px;
+  font-stretch: extra-expanded;
+  font-weight: 500;
+  line-height: 17.5px;
+  font-family: 'Inter';
+  height:4px
+  
+}
+
 .popular{
-  font-family: 'Inter', sans-serif; 
-  color: #007f61;
-  margin-top: 20px ;
+  font-family: 'Inter'; 
+  font-weight: 500;
   margin: 0; /* Reset default margins for paragraphs */
-  padding: 5px 0; 
-  margin-bottom: -5px;
+  
 } 
 
 
 
 .thirdthird2{
-  color: #000;
-  margin-bottom: 0px;
+  color: lightgray;
+  margin-left: 26px;
+    margin-top: -4px;
 font-size: 12.653px;
   font-stretch: extra-expanded;
   font-weight: 500;
   line-height: 1.2;
-    margin: 0; /* Reset default margins for paragraphs */
   padding: 5px 0; 
+  font-size: 10px;
+  text-decoration: line-through;
 }
 
 .popular {
-  margin-left: -23px;
-  margin-top: 0px;
-  font-size: 12.653px;
+  margin-left: 26px;
+  margin-top: -8px;
+  font-size: 14.46px;
   font-style: normal;
 font-weight: 600;
 line-height: normal;
@@ -285,7 +465,8 @@ line-height: normal;
 
 .table {
   display: flex;
-  margin-top: 0px;
+  margin-top: 8px;
+  margin-left: 17px;
 }
 
 .secondcolumn{
@@ -294,49 +475,61 @@ line-height: normal;
   align-items: flex-start;
 }
 
-.data {
-  font-size:  9.038px;
-  margin-bottom: 21px; 
+.data1 {
+  font-size:  9.04px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding-top: 3px;
+  font-family: 'Inter';
 }
 
+.data {
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 13px;
+  font-size: 9.04px;
+  font-family:'Inter'
+}
+
+
 .size{
-  font-family: 'Inter', sans-serif; 
- font-size: 9.942px;
- font-weight: 400;
+  font-family: 'Inter'; 
+ font-size: 9.94px;
  font-style: normal;
 font-weight: 400;
 line-height: normal;
   margin-bottom: -10px;
-  margin-top: -6px; /* Adjust margin to bring "Size" closer */
+  margin-top: -10px; /* Adjust margin to bring "Size" closer */
 
 }
 
 .dropdown-options{
   display: flex;
    flex-direction: column;
-  color: #007f61;
+  color: white;
    margin-top: 0px;
    font-size: small;
   }
 
 .options1{
-  color: black;
+  color:white;
 }
 
 .option:hover {
-  background-color: lightblue; /* Change to the desired color on hover */
+  background-color: #FFF9FA;
+ ; /* Change to the desired color on hover */
 }
 
 .dropdown-box{
-  width: 65.978px;
-  height: 25.306px;;
-  border: 0.904px solid #D9D9D9;
+  width: 65.98px;
+  height: 25.31px;;
+  border: 0.9px solid #D9D9D9;
   border-radius: 1.808px;
   margin-top: 15px;
-  background: #F4FBF9;
+  background:#FFFFFF;
+
   margin-bottom: -10px;
 }
 
@@ -344,26 +537,37 @@ line-height: normal;
   padding-left: 38px;
   padding-top: 0px;
   height: -23px;
-  font-size: 7px;
+  font-size: 6px;
 vertical-align:6px;
 }
 
-.arrow-down1{
-  padding-left: 11px;
+
+.arrow-down2{
+  padding-left: 18px;
   padding-top: 0px;
   height: -23px;
-  font-size: 7px;
+  font-size: 5.5px;
+vertical-align:6px;
+}
+
+
+.arrow-down1{
+  padding-left: 12px;
+  padding-top: 0px;
+  height: -23px;
+  font-size: 5.5px;
 vertical-align:6px;
 }
 
 .dropdown-content{
   font-family: 'Inter', sans-serif; 
-  font-size:10.846px;
+  font-size:10.85px;
   height: 20px;
    display: flex;
   align-items: center;
   margin-left: 8px;
-  font-weight: 400;
+  font-weight: 500;
+  margin-top: 3px;
 }
 
 .thirdcolumn{
@@ -376,7 +580,6 @@ vertical-align:6px;
    height:  74.112px;
   width: 340.734px;
   margin-left: 388px;
-  border-radius: 5px;
   border: 0.904px solid#C8C8C8; 
 }
 
@@ -389,48 +592,87 @@ vertical-align:6px;
 }
 
 .free {
-  font-family: 'Inter', sans-serif; 
-  color: #007f61;
+  font-family: 'Inter'; 
+  color:#FF6B82;
+  font-style:normal;
   font-size: 14px;
-  font-weight: 500;
-  opacity:0.6;
+  font-weight: 600;
 
 }
 
 .total {
-  font-family: 'Inter', sans-serif; 
+  font-family: 'Inter'; 
    font-size:14px ;
    font-weight: 500;
-   line-height: normal;
+   line-height: 16.94px;
+
 }
 
-.button {
-   background-color: #007f61; 
-   height: 48px ;
+.sixth {
+  display: flex;
+   background-color:#FF6B82;
+   height: 40px ;
    width: 341px ;
    margin-left: 388px;
-   margin-top: 20px;
-    border-radius: 5px;
+   margin-top: 19px;
+    border-radius: 4px;
     border:none
 }
 
+.plus-sign {
+  margin-left:102px;
+  margin-top: 12px;
+  position: relative;
+  width: 40px; /* Adjust width as needed */
+  height: 40px; /* Adjust height as needed */
+}
+
+.horizontal-line {
+
+  position: absolute;
+  top: 13%;
+  left: 14px;
+  width: 38%;
+  height: 2.5px; /* Adjust thickness as needed */
+  background-color: white;
+}
+
+.vertical-line {
+  position: absolute;
+  left: 52%;
+  top: 0;
+  width: 3px; /* Adjust thickness as needed */
+  height: 35%;
+  background-color: white;
+}
+
+.cart1{
+  margin-left: -2px;
+  margin-top: 8px;
+}
 .cart {
- font-family: 'Inter', sans-serif; 
-  font-weight: 600;
+ font-family: 'Inter'; 
+  font-weight: 500;
   color: #FFF;
-  font-size: 16px;
-  font-style: normal;
-  line-height: normal;
+  font-size: 12px;
+  line-height: 14.52px;
 }
 
 .selected-border {
-  border: 0.904px solid #007F61; /* Change the border color as desired */
-  background: #F4FBF9;/* Add any other desired styles */
+  border: 2px solid #FF6B82;
+; /* Change the border color as desired */
+ background: #FFF9FA;
+/* Add any other desired styles */
 }
 
 .power {
-  margin-top: 0px;
-  margin-left: 0px;
+  margin-top: 5px;
+  margin-left: 594px;
+  font-size: 12px;
+ font-family: 'Inter'; 
+ font-style: italic;
+ color:#00000066;
+
 }
 
 
